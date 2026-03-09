@@ -1,0 +1,10 @@
+coiw
+dist/
+*.exe
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+/code-on-incus/

@@ -124,9 +124,8 @@ if [ "${SKIP_INCUS:-}" = "1" ]; then
 elif check incus; then
     info "Already installed: $(incus version 2>/dev/null | head -1)"
 else
-    info "Installing Incus..."
-    sudo apt-get update -qq
-    sudo apt-get install -y -qq incus incus-client
+    info "Installing Incus from Zabbly repository (latest stable)..."
+    curl -fsSL https://pkgs.zabbly.com/get/incus-stable | sudo bash
 
     info "Adding $USER to incus-admin group..."
     sudo usermod -aG incus-admin "$USER"

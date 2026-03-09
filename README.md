@@ -5,7 +5,7 @@ A directory-aware CLI wrapper for [Code on Incus](https://github.com/mensfeld/co
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/wpie/coiw/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/WpieDevelopment/coiw/main/install.sh | bash
 ```
 
 This installs both `coiw` (the wrapper) and `coi` (Code on Incus) to `/usr/local/bin`.
@@ -13,7 +13,7 @@ This installs both `coiw` (the wrapper) and `coi` (Code on Incus) to `/usr/local
 To install a specific version:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/wpie/coiw/main/install.sh | VERSION=v2.1.0 bash
+curl -fsSL https://raw.githubusercontent.com/WpieDevelopment/coiw/main/install.sh | VERSION=v2.1.0 bash
 ```
 
 ## Prerequisites

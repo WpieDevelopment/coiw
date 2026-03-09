@@ -3,7 +3,7 @@
 # All-in-one installer for COI (Code on Incus) + coiw wrapper
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/wpie/coiw/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/WpieDevelopment/coiw/main/install.sh | bash
 #
 # Options (passed via environment variables):
 #   VERSION=v2.1.0        Pin release version (default: latest)
@@ -15,10 +15,10 @@
 #
 # Examples:
 #   # Full install on fresh machine
-#   curl -fsSL https://raw.githubusercontent.com/wpie/coiw/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/WpieDevelopment/coiw/main/install.sh | bash
 #
 #   # Just update binaries (skip infra)
-#   curl -fsSL https://raw.githubusercontent.com/wpie/coiw/main/install.sh | SKIP_INCUS=1 SKIP_ZFS=1 bash
+#   curl -fsSL https://raw.githubusercontent.com/WpieDevelopment/coiw/main/install.sh | SKIP_INCUS=1 SKIP_ZFS=1 bash
 #
 #   # Custom settings
 #   curl -fsSL ... | ZFS_SIZE=100GiB SSH_PORT=9322 bash
@@ -28,7 +28,7 @@ set -euo pipefail
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-REPO="${REPO:-wpie/coiw}"
+REPO="${REPO:-WpieDevelopment/coiw}"
 INSTALL_DIR="/usr/local/bin"
 ZFS_SIZE="${ZFS_SIZE:-70GiB}"
 SUBNET="${SUBNET:-10.10.10.1/24}"
